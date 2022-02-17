@@ -149,10 +149,15 @@
 
   function toggleLogoImg(id) {
     var img = document.getElementById(id).src;
-    if (img.indexOf('logo-dark.svg') != -1) {
-      document.getElementById(id).src = '/images/logo.svg';
+    // if (img.indexOf('logo-dark.svg') != -1) {
+    //   document.getElementById(id).src = '/images/logo.svg';
+    // } else {
+    //   document.getElementById(id).src = '/images/logo-dark.svg';
+    // }
+    if (img.indexOf('dark_k_svg.svg') != -1) {
+      document.getElementById(id).src = '/images/light_k_svg.svg';
     } else {
-      document.getElementById(id).src = '/images/logo-dark.svg';
+      document.getElementById(id).src = '/images/dark_k_svg.svg';
     }
   }
 
